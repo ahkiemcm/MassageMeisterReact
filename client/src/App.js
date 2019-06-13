@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Homepage from "./components/Homepage";
+import Nav from "./components/Nav";
+
+//Will use styled components for logo
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="x-dev" label="x-dev brand">
+        <h2>
+          Powered By
+          <span id="x-spin" label="x-dev animation">
+            -X-
+          </span>
+          <br />
+          DEV
+        </h2>
+      </div>
+      <Nav />
+      <Homepage />
     </div>
   );
 }

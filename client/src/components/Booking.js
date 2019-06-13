@@ -6,20 +6,16 @@ class Booking extends Component {
       <div className="booking">
         <h1>BOOK A MASSAGE</h1>
         <form name="general-info">
-          <tbody>
-            <td>
-              First Name:
-              <input type="text" className="biggerText">
-                First Name
-              </input>
-            </td>
-            <td>
-              Last Name:
-              <input type="text" className="biggerText">
-                Last Name
-              </input>
-            </td>
-          </tbody>
+          <div>
+            First Name:
+            <input type="text" className="biggerText">
+              First Name
+            </input>
+            Last Name:
+            <input type="text" className="biggerText">
+              Last Name
+            </input>
+          </div>
         </form>
       </div>
     );

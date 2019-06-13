@@ -1,25 +1,34 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+
 import Homepage from "./components/Homepage";
 import Nav from "./components/Nav";
+import Booking from "./components/Booking";
 
 //Will use styled components for logo
 
 function App() {
   return (
-    <div className="App">
+    <Router className="App">
       <div className="x-dev" label="x-dev brand">
-        <h2>
+        <h5>
           Powered By
           <span id="x-spin" label="x-dev animation">
             -X-
           </span>
           <br />
           DEV
-        </h2>
+        </h5>
       </div>
+
+      <Link>{/* logo */}</Link>
       <Nav />
-      <Homepage />
-    </div>
+
+      <Switch>
+        <Route exact path="/booking" component={Booking} />
+        <Route path="/" component={Homepage} />
+      </Switch>
+    </Router>
   );
 }
 

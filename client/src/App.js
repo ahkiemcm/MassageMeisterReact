@@ -20,13 +20,13 @@ function App() {
           DEV
         </h5>
       </div>
-
-      <Link>{/* logo */}</Link>
       <Nav />
-
+      <Link to="/">
+        <h1>Home</h1>
+      </Link>
       <Switch>
         <Route exact path="/booking" component={Booking} />
-        <Route path="/" component={Homepage} />
+        <Route exact path="/" component={Homepage} />
       </Switch>
     </Router>
   );

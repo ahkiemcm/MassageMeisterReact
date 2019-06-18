@@ -9,8 +9,8 @@ class Booking extends Component {
           <div>
             First Name:
             <input type="text" className="biggerText" value="First" />
+            Last Name:
             <input type="text" className="biggerText" value="Last" />
-            Last Name
           </div>
         </form>
       </div>

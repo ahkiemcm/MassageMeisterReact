@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Schedule from "./Schedule";
-// import Booking from "./Booking";
+import styled from "styled-components";
+
+const HomePage = styled.div`
+  text-align: center;
+`;
 
 class Homepage extends Component {
   bookingPage() {
@@ -11,7 +15,7 @@ class Homepage extends Component {
 
   render() {
     return (
-      <div>
+      <HomePage>
         <div className="parallax">
           <div className="paralimb">
             <h1>Why leave your house to relax?</h1>
@@ -29,7 +33,7 @@ class Homepage extends Component {
         <Schedule />
 
         <footer>Copyright &copy 2019</footer>
-      </div>
+      </HomePage>
     );
   }
 }

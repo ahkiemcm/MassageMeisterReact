@@ -5,7 +5,7 @@ class Schedule extends Component {
     return (
       <div>
         <h1>Availability</h1>
-        <table className="tableRules">
+        <table align="center" className="tableRules">
           <tr>
             <td className="tableData">
               <h2>Days</h2>

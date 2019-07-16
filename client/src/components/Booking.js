@@ -11,6 +11,9 @@ class Booking extends Component {
             <input type="text" className="biggerText" value="First" />
             Last Name:
             <input type="text" className="biggerText" value="Last" />
+            <br />
+            Birthday:
+            <input className="birthday" type="date" />
           </div>
         </form>
       </div>

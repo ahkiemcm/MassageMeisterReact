@@ -54,11 +54,11 @@ function App() {
 
         <Switch>
           {/* <Route exact path="/booking" component={Booking} /> */}
+          <Route exact path="/aboutme" component={AboutMe} />
+          <Route exact path="/aboutyou" component={AboutYou} />
+          <Route exact path="/faq" component={FAQ} />
+          <Route exact path="/services" component={Services} />
           <Route path="/" component={Homepage} />
-          <Route path="/aboutme" component={AboutMe} />
-          <Route path="/aboutyou" component={AboutYou} />
-          <Route path="/faq" component={FAQ} />
-          <Route path="/services" component={Services} />
         </Switch>
       </Router>
     </Body>

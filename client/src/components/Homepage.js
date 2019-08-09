@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import Schedule from "./Schedule";
 import styled from "styled-components";
 

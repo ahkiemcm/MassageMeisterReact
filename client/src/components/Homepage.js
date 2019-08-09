@@ -8,10 +8,10 @@ const HomePage = styled.div`
 `;
 
 class Homepage extends Component {
-  bookingPage() {
-    console.log("Working button");
-    //Will send user to booking page
-  }
+  // bookingPage() {
+  //   console.log("Working button");
+  //   //Will send user to booking page
+  // }
 
   render() {
     return (
@@ -20,12 +20,6 @@ class Homepage extends Component {
           <div className="paralimb">
             <h1>Why leave your house to relax?</h1>
             <h2>I'll just bring it to you. That's what I do.</h2>
-
-            <Link to="/booking">
-              <button id="book-meister" onClick={this.bookingPage}>
-                Book Your Meister
-              </button>
-            </Link>
           </div>
         </div>
         <br />

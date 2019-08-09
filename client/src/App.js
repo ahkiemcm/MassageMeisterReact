@@ -8,7 +8,7 @@ import FAQ from "./components/FAQ";
 import Services from "./components/Services";
 // import Booking from "./components/Booking";
 import styled from "styled-components";
-import logo from "./images/logo/x-logo.png";
+import logo from "./images/logo/x-logo.jpg";
 
 const Dev = styled.div`
   float: right;
@@ -21,12 +21,11 @@ const Body = styled.div`
 //Will use styled components for logo
 const Logo = styled.img`
   margin-left: 380px;
-  /* display: flex; */
-  /* align-content: center; */
-  height: 500px;
-  width: 500px;
+  /* display: flex; 
+  align-content: center; */
+  /* height: 500px;
+  width: 500px; */
   /* background-color: gray; */
-  border: rgb(0, 0, 0, 0.4) solid 12px;
   /* background-image: url(${logo}); */
 `;
 
@@ -53,7 +52,6 @@ function App() {
         <Nav />
 
         <Switch>
-          {/* <Route exact path="/booking" component={Booking} /> */}
           <Route exact path="/aboutme" component={AboutMe} />
           <Route exact path="/aboutyou" component={AboutYou} />
           <Route exact path="/faq" component={FAQ} />

@@ -6,16 +6,14 @@ import AboutMe from "./components/AboutMe";
 import AboutYou from "./components/AboutYou";
 import FAQ from "./components/FAQ";
 import Services from "./components/Services";
-// import Booking from "./components/Booking";
+import "./style.css";
 import styled from "styled-components";
 import logo from "./images/logo/x-logo.jpg";
 
+document.body.style = "background: #3b3b3b";
+
 const Dev = styled.div`
   float: right;
-`;
-
-const Body = styled.div`
-  background-color: #3b3b3b;
 `;
 
 //Will use styled components for logo
@@ -31,7 +29,7 @@ const Logo = styled.img`
 
 function App() {
   return (
-    <Body>
+    <div>
       <Dev className="x-dev" label="x-dev brand">
         <h5>
           Powered By
@@ -59,7 +57,7 @@ function App() {
           <Route path="/" component={Homepage} />
         </Switch>
       </Router>
-    </Body>
+    </div>
   );
 }
 
